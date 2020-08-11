@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "sdaPluginSchematic",
+    "type": "object",
+    "properties": {
+        "libName": {
+            "description": "The name of the new lib",
+            "type": "string",
+            "$default": {
+                "$source": "argv",
+                "index": 1
+            },
+            "x-prompt": "Choose a name for the lib (ClassCase, camelCase, dash-case are ok):"
+        },
+        "tmpl": {
+            "default": ""
+        }
+    },
+    "required": ["libName"]
+}

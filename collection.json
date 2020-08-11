@@ -1,0 +1,13 @@
+{
+    "$schema": "../../node_modules/@angular-devkit/schematics/collection-schema.json",
+    "name": "example",
+    "version": "0.0.1",
+    "extends": ["@nrwl/angular"],
+    "schematics": {
+        "mvp-buggy-lib": {
+            "factory": "./mvp-buggy-lib-schematics",
+            "schema": "./mvp-buggy-lib-schematics/schema.json",
+            "description": "Create a buggy lib within a workspace"
+        }
+    }
+}
